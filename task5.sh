@@ -23,7 +23,7 @@ for remote_branch in $remote_branches; do
     git pull origin $branch_name
 	
     # Checking for changes
-    if [ $(git rev-parse HEAD) != $(git rev-parse "origin/$branch_name") ]; then
+    # if [ $(git rev-parse HEAD) != $(git rev-parse "origin/$branch_name") ]; then
 
 
         git add .
@@ -34,7 +34,8 @@ for remote_branch in $remote_branches; do
         git push origin $branch_name
 
         echo "Updated and pushed changes for branch $branch_name."
-    else
-        echo "No new changes to update for branch $branch_name."
-    fi
+    # else
+
+        # echo "No new changes to update for branch $branch_name."
+    # fi
 done
