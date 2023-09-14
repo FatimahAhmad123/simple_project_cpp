@@ -28,7 +28,7 @@ for remote_branch in $remote_branches; do
 
         git add .
 
-        commit_message="Auto-commit at $(date +'%Y-%m-%d %H:%M:%S') on $branch_name"
+        commit_message="Auto-commit at $(date +'%Y-%m-%d %H:%M:%S')"
         git commit -m "$commit_message"
 
         git push origin $branch_name
